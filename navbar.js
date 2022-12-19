@@ -17,12 +17,24 @@ document.write(`
       </style>
       <div class="navbar-btn-group d-flex align-content-center ml-auto order-lg-3 ml-lg-0">
          <a href="#" class="btn"><i class="bi bi-person-circle"></i></a>
-         <a href="#" class="btn"><i class="bi bi-cart"></i></a>
+         <div class="position-relative">
+            <a href="#" class="btn">
+               <i class="bi bi-cart"></i>
+            </a>
+            <span class="badge badge-danger" style="position: absolute; top: 25%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem;">+99</span>
+         </div>
       </div>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol">
-         <span class="navbar-toggler-icon"></span>
-         <!-- <i class="bi bi-three-dots-vertical"></i> -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol" style="width: 56px; height: 40px;">
+         <i class="bi bi-three-dots-vertical"></i>
       </button>
+      <style>
+         @media (max-width: 991.98px) {
+            .navbar-btn-group .btn,
+            .navbar-toggler {
+               font-size: 1.25rem;
+            }
+         }
+      </style>
       <div class="collapse navbar-collapse" id="navcol">
          <form action="" class="d-flex flex-nowrap mt-2 mb-3 my-lg-0 order-lg-2">
             <input type="search" class="form-control px-0 bg-transparent border-0" placeholder="Search"

@@ -42,7 +42,7 @@ document.write(`
    }
 
    * {
-      // outline: solid 1p                         x green;
+      // outline: solid 1px green;
    }
 
    .wrapper {

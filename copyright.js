@@ -1,5 +1,5 @@
 document.write(`
-<footer id="copyright" class="small text-center bg-light">
+<footer id="copyright" class="text-center bg-light" style="font-size: .875em;">
    <div class="border-top">
       <div class="container py-4">
          <nav class="nav justify-content-center text-uppercase mb-4">
@@ -21,12 +21,12 @@ document.write(`
          </nav>
       </div>
    </div>
-   <div class="border-top">
+   <div class="border-top" style="font-size: .875em;">
       <div class="container py-3">
          <div class="row justify-content-xl-between align-items-xl-center">
             <div class="col-xl-auto mb-3 d-lg-flex align-items-center justify-content-center mb-xl-0">
                <select name="" id=""
-                  class="form-control form-control-sm rounded-0 w-auto mx-auto mb-3 mb-lg-0 ml-lg-0 mr-lg-3">
+                  class="form-control form-control-sm rounded-0 w-auto mx-auto mb-3 mb-lg-0 ml-lg-0 mr-lg-3" >
                   <option value="1">Language</option>
                   <option value="2">Bahasa</option>
                   <option value="3">Melayu</option>
@@ -49,7 +49,6 @@ document.write(`
 <style>
    #copyright * {
       color: inherit;
-      font-size: inherit;
       line-height: 1;
    }
 
