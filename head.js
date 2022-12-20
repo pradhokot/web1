@@ -46,7 +46,7 @@ document.write(`
    }
 
    .wrapper {
-      // min-height: calc(100vh - 209px);
+      min-height: calc(100vh - 245px);
       padding-top: 70px;
       margin-bottom: 6rem;
    }

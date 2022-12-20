@@ -103,7 +103,7 @@ document.write(`
             }
          </style>
          <ul class="navbar-nav text-uppercase order-lg-1 ml-auto mr-lg-4 fw-medium">
-            <li class="nav-item"><a href="#" class="nav-link">coffee</a></li>
+            <li class="nav-item"><a href="coffee.html" class="nav-link">coffee</a></li>
             <li class="nav-item"><a href="#" class="nav-link">machines</a></li>
             <li class="nav-item"><a href="#" class="nav-link">explore</a></li>
             <li class="nav-item"><a href="#" class="nav-link">partnership</a></li>

@@ -6,8 +6,8 @@ document.write(`
       button, you agree to the use of cookies on this website. For additional information, please see our →
       <a href="#" class="text-light mr-3" target="_blank"><u>Privacy Policy</u></a>
    </span>
-   <button class="btn btn-sm btn-outline-light px-3 text-nowrap" data-dismiss="alert">
-      OK <i class="bi bi-hand-thumbs-up-fill"></i>
+   <button class="btn btn-outline-light px-3 text-nowrap" data-dismiss="alert">
+      <i class="bi bi-hand-thumbs-up-fill"></i> OK
    </button>
 </div>
 `)
