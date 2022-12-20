@@ -6,8 +6,10 @@ document.write(`
 $(window).scroll(function () {
    if ($(window).scrollTop() >= 150) {
       $('#navtop').addClass('shrink');
+      $('#notifikasi').collapse('hide');
    } else {
       $('#navtop').removeClass('shrink');
+      $('#notifikasi').collapse('show');
    }
 });
 

@@ -3,7 +3,7 @@ document.write(`
    <div class="border-top">
       <div class="container py-5">
          <nav class="nav justify-content-center text-uppercase mb-5">
-            <a href="#" class="nav-link py-lg-0 active">home</a>
+            <a href="index.html" class="nav-link py-lg-0 active">home</a>
             <a href="#" class="nav-link py-lg-0">beans</a>
             <a href="#" class="nav-link py-lg-0">ground</a>
             <a href="#" class="nav-link py-lg-0">drip</a>

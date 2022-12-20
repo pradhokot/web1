@@ -22,9 +22,16 @@ document.write(`
             <a href="#" class="btn">
                <i class="bi bi-cart"></i>
             </a>
-            <span class="badge badge-danger text-white" style="position: absolute; top: 25%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem; font-family: 'GoogleMedium'; font-weight: 500;">+99</span>
+            <span class="badge badge-danger text-white" style="position: absolute; top: 22.5%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem; font-family: 'GoogleMedium'; font-weight: 500;">+99</span>
          </div>
       </div>
+      <style>
+         @media (min-width: 992px) {
+            #navtop .navbar-btn-group .badge {
+               top: 12.5%!important;
+            }
+         }
+      </style>
       <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navcol" style="width: 56px; height: 40px; margin-right: -.75rem;">
          <i class="bi bi-three-dots-vertical"></i>
       </button>

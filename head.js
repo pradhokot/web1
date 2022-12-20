@@ -68,5 +68,87 @@ document.write(`
       background-color: #fd4f00;
       border-color: #fd4f00;
    }
+   
+   .btn-primary:hover,
+   .btn-primary.active {
+      color: white;
+      background-color: #fd1e00;
+      border-color: #fd1e00;
+   }
+
+   \* grid *\
+   .row.g-0 {
+      margin: 0;
+   }
+
+   .row.g-0 > div {
+      padding: 0;
+      margin-top: 1.875px;
+   }
+
+   .row.g-1 {
+      margin: 0 -1.875px;
+   }
+
+   .row.g-1 > div {
+      padding: 0 1.875px;
+      margin-top: 3.75px;
+   }
+
+   .row.g-2 {
+      margin: 0 -3.75px;
+   }
+
+   .row.g-2 > div {
+      padding: 0 3.75px;
+      margin-top: 7.5px;
+   }
+
+   .row.g-3 {
+      margin: 0 -7.5px;
+   }
+
+   .row.g-3 > div {
+      padding: 0 7.5px;
+      margin-top: 15px;
+   }
+
+   @media (min-width: 992px) {
+      .row.g-lg-0 {
+         margin: 0;
+      }
+   
+      .row.g-lg-0 > div {
+         padding: 0;
+         margin-top: 1.875px;
+      }
+   
+      .row.g-lg-1 {
+         margin: 0 -1.875px;
+      }
+   
+      .row.g-lg-1 > div {
+         padding: 0 1.875px;
+         margin-top: 3.75px;
+      }
+   
+      .row.g-lg-2 {
+         margin: 0 -3.75px;
+      }
+   
+      .row.g-lg-2 > div {
+         padding: 0 3.75px;
+         margin-top: 7.5px;
+      }
+   
+      .row.g-lg-3 {
+         margin: 0 -7.5px;
+      }
+   
+      .row.g-lg-3 > div {
+         padding: 0 7.5px;
+         margin-top: 15px;
+      }
+   }
 </style>
 `)
