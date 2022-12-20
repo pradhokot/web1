@@ -1,7 +1,7 @@
 document.write(`
 <footer id="copyright" class="text-center bg-light" style="font-size: .875em;">
    <div class="border-top">
-      <div class="container py-5">
+      <div class="container py-4 py-md-5">
          <nav class="nav justify-content-center text-uppercase mb-5">
             <a href="index.html" class="nav-link py-lg-0 active">home</a>
             <a href="#" class="nav-link py-lg-0">beans</a>
