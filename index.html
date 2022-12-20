@@ -131,6 +131,13 @@
 
          #homeBanner .carousel-caption h1 {
             font-size: calc(2rem + .75vw);
+            max-width: 680px;
+         }
+
+         @media (min-width: 992px) {
+            #homeBanner .carousel-caption h1 {
+               font-size: calc(2.5rem + 1vw);
+            }
          }
 
          #homeBanner .carousel-control {
@@ -248,14 +255,46 @@
       </style>
 
       <!-- home grid -->
-      <section>
-         <div class="container"></div>
+      <section id="homeGrid">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-md-6">
+                  <a href="#" class="d-inline">
+                     <div class="card bg-dark rounded-0">
+                        <img src="assets/img/home/home_maps.jpg" class="img-fluid w-100" alt="">
+                        <div class="card-img-overlay">
+                           <h5 class="card-title text-light">
+                              <small>OUR</small>
+                              <br>Locations
+                           </h5>
+                           <p class="card-text">Beans Collection</p>
+                           <a href="#" class="btn btn-sm btn-outline-light rounded-0">
+                              <small>MORE INFO <i class="bi bi-chevron-right"></i></small>
+                           </a>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-md-6"></div>
+               <div class="col-6 col-md-3"></div>
+               <div class="col-6 col-md-3"></div>
+               <div class="col-6 col-md-3"></div>
+               <div class="col-6 col-md-3"></div>
+               <div class="col-md-6"></div>
+               <div class="col-md-6"></div>
+            </div>
+         </div>
       </section>
 
    </main>
 
    <script src="copyright.js"></script>
    <script src="footer.js"></script>
+   <script>
+      document.querySelector('#navtop .navbar').classList.add('navbar-dark');
+      document.querySelector('.wrapper').classList.add('pt-0');
+   </script>
 
 </body>
 

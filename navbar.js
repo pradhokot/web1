@@ -1,16 +1,17 @@
 document.write(`
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg" style="transition: .36s;">
    <div class="container">
       <a href="index.html" class="navbar-brand py-0">
          <img src="assets/img/logo.svg" class="img-fluid" alt="">
       </a>
       <style>
-         .navbar-brand img {
+         #navtop .navbar-brand img {
             width: 40px;
+            transition: .36s;
          }
 
          @media (min-width: 992px) {
-            .navbar-brand img {
+            #navtop .navbar-brand img {
                width: 80px;
             }
          }
@@ -21,16 +22,16 @@ document.write(`
             <a href="#" class="btn">
                <i class="bi bi-cart"></i>
             </a>
-            <span class="badge badge-danger" style="position: absolute; top: 25%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem;">+99</span>
+            <span class="badge badge-danger text-white" style="position: absolute; top: 25%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem; font-family: 'GoogleMedium'; font-weight: 500;">+99</span>
          </div>
       </div>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol" style="width: 56px; height: 40px;">
+      <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navcol" style="width: 56px; height: 40px; margin-right: -.75rem;">
          <i class="bi bi-three-dots-vertical"></i>
       </button>
       <style>
          @media (max-width: 991.98px) {
-            .navbar-btn-group .btn,
-            .navbar-toggler {
+            #navtop .navbar-btn-group .btn,
+            #navtop .navbar-toggler {
                font-size: 1.25rem;
             }
          }
@@ -42,25 +43,25 @@ document.write(`
             <button class="btn"><i class="bi bi-search"></i></button>
          </form>
          <style>
-            .navbar-collapse form {
+            #navtop .navbar-collapse form {
                border-bottom: solid 1px #b4b4b4;
             }
 
-            .navbar-collapse form .btn {
+            #navtop .navbar-collapse form .btn {
                min-width: 42px;
             }
 
-            .navbar-collapse form .btn i {
+            #navtop .navbar-collapse form .btn i {
                margin-right: -.75rem;
             }
 
             @media (min-width: 992px) {
-               .navbar-collapse form {
+               #navtop .navbar-collapse form {
                   border-bottom: solid 1px transparent;
                   position: relative;
                }
 
-               .navbar-collapse form::after {
+               #navtop .navbar-collapse form::after {
                   content: '';
                   position: absolute;
                   bottom: 0;
@@ -71,30 +72,30 @@ document.write(`
                   transition: .36s;
                }
 
-               .navbar-collapse form:hover::after {
+               #navtop .navbar-collapse form:hover::after {
                   background-color: #b4b4b4;
                }
 
-               .navbar-collapse form .btn {
+               #navtop .navbar-collapse form .btn {
                   min-width: auto;
                }
 
-               .navbar-collapse form .btn i {
+               #navtop .navbar-collapse form .btn i {
                   margin-right: 0;
                }
 
-               .navbar-collapse .form-control {
+               #navtop .navbar-collapse .form-control {
                   max-width: 0;
-                  transition: .36s;
                   overflow: hidden;
+                  transition: .36s;
                }
 
-               .navbar-collapse form:hover .form-control {
+               #navtop .navbar-collapse form:hover .form-control {
                   max-width: 162px;
                }
             }
          </style>
-         <ul class="navbar-nav text-uppercase order-lg-1 ml-auto mr-lg-4 fw-bold">
+         <ul class="navbar-nav text-uppercase order-lg-1 ml-auto mr-lg-4 fw-medium">
             <li class="nav-item"><a href="#" class="nav-link">coffee</a></li>
             <li class="nav-item"><a href="#" class="nav-link">machines</a></li>
             <li class="nav-item"><a href="#" class="nav-link">explore</a></li>
@@ -106,7 +107,7 @@ document.write(`
       <style>
          @media (min-width: 992px) {
 
-            .navbar-collapse {
+            #navtop .navbar-collapse {
                font-size: .875em;
             }
          }
@@ -114,20 +115,93 @@ document.write(`
    </div>
 </nav>
 <style>
-   .navbar * {
+   #navtop .navbar * {
       line-height: 1;
       border-radius: 0;
+      color: inherit;
    }
 
-   .navbar {
+   #navtop .navbar {
       padding-top: 15px;
       padding-bottom: 15px;
    }
 
    @media (min-width: 992px) {
-      .navbar {
+      #navtop .navbar {
          padding-top: 1.75rem;
          padding-bottom: 1.75rem;
+      }
+   }
+
+   /* navbar light (default) */
+   #navtop .navbar {
+      background-color: rgba(255,255,255,1);
+   }
+
+   #navtop .navbar .nav-link,
+   #navtop .navbar .btn,
+   #navtop .navbar .form-select {
+      opacity: .75;
+      transition: .36s;
+   }
+
+   #navtop .navbar .nav-link:hover,
+   #navtop .navbar .btn:hover,
+   #navtop .navbar .form-select:hover {
+      opacity: 1;
+   }
+
+   #navtop .navbar .nav-link.active,
+   #navtop .navbar .btn.active,
+   #navtop .navbar .form-select.active {
+      opacity: 1;
+      font-family: 'GoogleBold';
+   }
+
+   /* navbar dark */
+   #navtop .navbar.navbar-dark * {
+      color: white;
+   }
+
+   #navtop .navbar.navbar-dark {
+      background-color: transparent;
+   }
+
+   /* navbar shrink */
+   #navtop.shrink .navbar,
+   #navtop.shrink .navbar.navbar-dark {
+      background-color: rgba(255,255,255, 1);
+   }
+   
+   #navtop.shrink .navbar *,
+   #navtop.shrink .navbar.navbar-dark * {
+      color: #323232;
+   }
+
+   @media (min-width: 992px) {
+      #navtop.shrink .navbar {
+         padding-top: 15px;
+         padding-bottom: 15px;
+      }
+
+      #navtop.shrink .navbar-brand img {
+         width: 50px;
+      }
+   }
+
+   /* navbar open mobile */
+   @media (max-width: 991.98px) {
+      #navtop.nav-open .navbar,
+      #navtop.shrink.nav-open .navbar,
+      #navtop.shrink.nav-open .navbar.navbar-dark {
+         background-color: rgba(255,255,255, 1);
+      }
+      
+      #navtop.nav-open .navbar *,
+      #navtop.nav-open .navbar.navbar-dark *,
+      #navtop.shrink.nav-open .navbar *,
+      #navtop.shrink.nav-open .navbar.navbar-dark * {
+         color: #323232;
       }
    }
 </style>

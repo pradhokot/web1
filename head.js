@@ -46,7 +46,27 @@ document.write(`
    }
 
    .wrapper {
-      min-height: calc(100vh - 209px);
+      // min-height: calc(100vh - 209px);
+      padding-top: 70px;
+      margin-bottom: 6rem;
+   }
+   
+   @media (min-width: 992px) {
+      .wrapper {
+         padding-top: 136px;
+         margin-bottom: 9rem;
+      }
+   }
+
+   ::placeholder {
+      color: inherit!important;
+      opacity: .5!important;
+   }
+
+   .btn-primary {
+      color: white;
+      background-color: #fd4f00;
+      border-color: #fd4f00;
    }
 </style>
 `)

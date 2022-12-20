@@ -1,32 +1,32 @@
 document.write(`
 <footer id="copyright" class="text-center bg-light" style="font-size: .875em;">
    <div class="border-top">
-      <div class="container py-4">
-         <nav class="nav justify-content-center text-uppercase mb-4">
-            <a href="#" class="nav-link active">home</a>
-            <a href="#" class="nav-link">beans</a>
-            <a href="#" class="nav-link">ground</a>
-            <a href="#" class="nav-link">drip</a>
-            <a href="#" class="nav-link">capsules</a>
-            <a href="#" class="nav-link">membership</a>
-            <a href="#" class="nav-link">contact</a>
-            <a href="#" class="nav-link">brochure</a>
-            <a href="#" class="nav-link">news</a>
+      <div class="container py-5">
+         <nav class="nav justify-content-center text-uppercase mb-5">
+            <a href="#" class="nav-link py-lg-0 active">home</a>
+            <a href="#" class="nav-link py-lg-0">beans</a>
+            <a href="#" class="nav-link py-lg-0">ground</a>
+            <a href="#" class="nav-link py-lg-0">drip</a>
+            <a href="#" class="nav-link py-lg-0">capsules</a>
+            <a href="#" class="nav-link py-lg-0">membership</a>
+            <a href="#" class="nav-link py-lg-0">contact</a>
+            <a href="#" class="nav-link py-lg-0">brochure</a>
+            <a href="#" class="nav-link py-lg-0">news</a>
          </nav>
          <nav class="nav justify-content-center" style="font-size: 1.75em;">
-            <a href="#" target="_blank" class="nav-link px-lg-3"><i class="bi bi-twitter"></i></a>
-            <a href="#" target="_blank" class="nav-link px-lg-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" target="_blank" class="nav-link px-lg-3"><i class="bi bi-instagram"></i></a>
-            <a href="#" target="_blank" class="nav-link px-lg-3"><i class="bi bi-youtube"></i></a>
+            <a href="#" target="_blank" class="nav-link py-lg-0 px-lg-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" target="_blank" class="nav-link py-lg-0 px-lg-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank" class="nav-link py-lg-0 px-lg-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank" class="nav-link py-lg-0 px-lg-3"><i class="bi bi-youtube"></i></a>
          </nav>
       </div>
    </div>
    <div class="border-top" style="font-size: .875em;">
       <div class="container py-3">
          <div class="row justify-content-xl-between align-items-xl-center">
-            <div class="col-xl-auto mb-3 d-lg-flex align-items-center justify-content-center mb-xl-0">
+            <div class="col-xl-auto mb-4 d-lg-flex align-items-center justify-content-center mb-xl-0">
                <select name="" id=""
-                  class="form-control form-control-sm rounded-0 w-auto mx-auto mb-3 mb-lg-0 ml-lg-0 mr-lg-3" >
+                  class="form-control form-control-sm rounded-0 w-auto mx-auto mb-3 mb-lg-0 ml-lg-0 mr-lg-3" style="font-size: inherit;">
                   <option value="1">Language</option>
                   <option value="2">Bahasa</option>
                   <option value="3">Melayu</option>
