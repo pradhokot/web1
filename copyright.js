@@ -33,10 +33,10 @@ document.write(`
                   <option value="4">Jawa</option>
                </select>
                <nav class="nav justify-content-center text-capitalize">
-                  <a href="#" target="_blank" class="nav-link px-lg-2">privacy policy</a>
-                  <a href="#" target="_blank" class="nav-link px-lg-2">terms & conditions</a>
-                  <a href="#" target="_blank" class="nav-link px-lg-2">information on data protection</a>
-                  <a href="#" target="_blank" class="nav-link px-lg-2">help?</a>
+                  <a href="#" target="_blank" class="nav-link px-2">privacy policy</a>
+                  <a href="#" target="_blank" class="nav-link px-2">terms & conditions</a>
+                  <a href="#" target="_blank" class="nav-link px-2">information on data protection</a>
+                  <a href="#" target="_blank" class="nav-link px-2">help?</a>
                </nav>
             </div>
             <div class="col-xl-auto">
