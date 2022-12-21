@@ -17,9 +17,9 @@ document.write(`
          }
       </style>
       <div class="navbar-btn-group d-flex align-content-center ml-auto order-lg-3 ml-lg-0">
-         <a href="#" class="btn"><i class="bi bi-person-circle"></i></a>
+         <a href="#" class="btn" id="navUser"><i class="bi bi-person-circle"></i></a>
          <div class="position-relative">
-            <a href="#" class="btn">
+            <a href="#" class="btn" id="navCart">
                <i class="bi bi-cart"></i>
             </a>
             <span class="badge badge-danger text-white" style="position: absolute; top: 22.5%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem; font-family: 'GoogleMedium'; font-weight: 500;">+99</span>
@@ -103,12 +103,12 @@ document.write(`
             }
          </style>
          <ul class="navbar-nav text-uppercase order-lg-1 ml-auto mr-lg-4 fw-medium">
-            <li class="nav-item"><a href="coffee.html" class="nav-link">coffee</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">machines</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">explore</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">partnership</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">cafe</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">gallery</a></li>
+            <li class="nav-item"><a href="coffee.html" class="nav-link" id="navCoffee">coffee</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="navMachines">machines</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="navExplore">explore</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="navPartnership">partnership</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="navCafe">cafe</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="navGallery">gallery</a></li>
          </ul>
       </div>
       <style>

@@ -3,15 +3,15 @@ document.write(`
    <div class="border-top">
       <div class="container py-4 py-md-5">
          <nav class="nav justify-content-center text-uppercase mb-5">
-            <a href="index.html" class="nav-link py-lg-0 active">home</a>
-            <a href="#" class="nav-link py-lg-0">beans</a>
-            <a href="#" class="nav-link py-lg-0">ground</a>
-            <a href="#" class="nav-link py-lg-0">drip</a>
-            <a href="#" class="nav-link py-lg-0">capsules</a>
-            <a href="#" class="nav-link py-lg-0">membership</a>
-            <a href="#" class="nav-link py-lg-0">contact</a>
-            <a href="#" class="nav-link py-lg-0">brochure</a>
-            <a href="#" class="nav-link py-lg-0">news</a>
+            <a href="index.html" class="nav-link py-lg-0" id="footerHome">home</a>
+            <a href="coffee.html" class="nav-link py-lg-0" id="footerBeans">beans</a>
+            <a href="coffee.html" class="nav-link py-lg-0" id="footerGround">ground</a>
+            <a href="coffee.html" class="nav-link py-lg-0" id="footerDrip">drip</a>
+            <a href="coffee.html" class="nav-link py-lg-0" id="footerCapsules">capsules</a>
+            <a href="#" class="nav-link py-lg-0" id="footerMembership">membership</a>
+            <a href="#" class="nav-link py-lg-0" id="footerContact">contact</a>
+            <a href="#" class="nav-link py-lg-0" id="footerBrochure">brochure</a>
+            <a href="#" class="nav-link py-lg-0" id="footerNews">news</a>
          </nav>
          <nav class="nav justify-content-center" style="font-size: 1.75em;">
             <a href="#" target="_blank" class="nav-link py-lg-0 px-lg-3"><i class="bi bi-twitter"></i></a>
