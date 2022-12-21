@@ -75,7 +75,7 @@ document.write(`
       border-color: #fd4f00;
    }
    
-   \* custom button *\
+   /* custom button */
    button:focus, input:focus, select:focus, textarea:focus, .btn, .form-control, .navbar-toggler:focus {
       outline: none!important;
       box-shadow: none!important;
@@ -89,7 +89,7 @@ document.write(`
       border-color: #fd1e00;
    }
 
-   \* grid *\
+   /* grid */
    .row.g-0 {
       margin: 0;
    }
@@ -162,6 +162,180 @@ document.write(`
          padding: 0 7.5px;
          margin-top: 15px;
       }
+   }
+
+   /* ------------------------- card product ------------------------- */
+   .card-product {
+      max-width: 240px;
+      text-transform: capitalize;
+      margin: 0 auto;
+      border-width: 0;
+   }
+
+   .card-product .card-header {
+      position: relative; 
+      background-color: transparent;
+      border-width: 0;
+      padding: 0;
+   }
+
+   .card-product .card-img {
+      display: block;
+      padding-top: 100%; 
+      position: relative;
+   }
+
+   .card-product .position-wobler {
+      position: absolute; 
+      bottom: 10%; 
+      right: 10%;
+   }
+
+   .card-product .wobler {
+      background-color: red; 
+      color: white; 
+      width: calc(42px + .75vw); 
+      height: calc(42px + .75vw); 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      border-radius: 100%; 
+      line-height: 1; 
+      font-family: 'GoogleBold'; 
+      font-size: calc(1rem + .15vw); 
+      outline: solid 1px white;
+   }
+
+   .card-product .btn-addtocart {
+      background-color: #a9a9a9; 
+      color: white; 
+      position: absolute; 
+      top: 0; 
+      right: 0; 
+      width: 38px; 
+      height: 38px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      line-height: 1; 
+      font-size: 1.25rem; 
+      outline: solid 1px white;
+   }
+
+   .card-product .btn-addtocart:hover {
+      background-color: #646464;
+   }
+
+   .card-product .card-body {
+      font-size: .875em;
+      text-align: center;
+      padding: 0;
+   }
+
+   .card-product .card-title {
+      font-family: 'GoogleBold';
+      margin-bottom: 0;
+      line-height: normal;
+   }
+
+   /* product price */
+   .product-price {
+      line-height: normal;
+   }
+
+   .product-price .promo-price {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .product-price .discount-price,
+   .product-price .normal-price {
+      margin: 0 .25rem;
+   }
+
+   .product-price .reguler-price {
+      font-family: 'GoogleMedium';
+   }
+
+   .product-price .discount-price {
+      color: #fd4f00;
+      font-family: 'GoogleMedium';
+   }
+
+   .product-price .normal-price {
+      opacity: .75;
+   }
+
+   /* card product interactive */
+   .card-product .card-img img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: .36s;
+   }
+
+   .card-product .card-img img:first-of-type,
+   .card-product.out-stock:hover .card-img img:first-of-type {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+   }
+
+   .card-product .card-img img:last-of-type,
+   .card-product.out-stock:hover .card-img img:last-of-type {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, -50%) scale(.5);
+   }
+
+   .card-product:hover .card-img img:first-of-type {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, -50%) scale(.5);
+   }
+
+   .card-product:hover .card-img img:last-of-type {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+   }
+
+   @media (min-width: 992px) {
+      .card-product .btn-addtocart {
+         opacity: 0;
+         visibility: hidden;
+         transition: .36s;
+      }
+
+      .card-product:hover .btn-addtocart {
+         opacity: 1;
+         visibility: visible;
+      }
+   }
+
+   .card-product.out-stock .wobler,
+   .card-product.out-stock .btn-addtocart {
+      display: none !important;
+   }
+
+   .card-product.out-stock .card-header::after {
+      content: 'Out of Stock';
+      font-family: 'GoogleBold';
+      background-color: rgba(255, 255, 255, .75);
+      color: #323232;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      font-size: 1.25rem;
    }
 </style>
 `)

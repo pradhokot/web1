@@ -15,7 +15,7 @@ $(window).scroll(function () {
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
    var currentScrollPos = window.pageYOffset;
-   if (prevScrollpos > currentScrollPos) {
+   if (prevScrollpos >= currentScrollPos) {
       $('#notifikasi').collapse('show');
    } else {
       $('#notifikasi').collapse('hide');
