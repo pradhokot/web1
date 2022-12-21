@@ -48,13 +48,19 @@ document.write(`
    .wrapper {
       min-height: calc(100vh - 245px);
       padding-top: 70px;
-      margin-bottom: 6rem;
+   }
+
+   .wrapper section {
+      margin-bottom: 5.5rem;
    }
    
    @media (min-width: 992px) {
       .wrapper {
          padding-top: 136px;
-         margin-bottom: 9rem;
+      }
+
+      .wrapper section {
+         margin-bottom: 7rem;
       }
    }
 
@@ -69,6 +75,13 @@ document.write(`
       border-color: #fd4f00;
    }
    
+   \* custom button *\
+   button:focus, input:focus, select:focus, textarea:focus, .btn, .form-control, .navbar-toggler:focus {
+      outline: none!important;
+      box-shadow: none!important;
+      text-decoration: none!important;
+   }
+
    .btn-primary:hover,
    .btn-primary.active {
       color: white;

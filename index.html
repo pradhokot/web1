@@ -15,7 +15,7 @@
    <main class="wrapper">
 
       <!-- home banner -->
-      <section>
+      <section class="mb-0">
          <div id="homeBanner" class="carousel slide carousel-fade bg-dark overflow-hidden" data-ride="carousel"
             data-pause="false">
             <div class="carousel-inner">
@@ -388,8 +388,13 @@
    <script src="copyright.js"></script>
    <script src="footer.js"></script>
    <script>
+      // active link
+      document.querySelector('#footerHome').classList.add('active');
+      // change theme on navbar
       document.querySelector('#navtop .navbar').classList.add('navbar-dark');
+      // remove paddign top on wrapper class
       document.querySelector('.wrapper').classList.add('pt-0');
+      // set full height window on mobile device
       $('#homeBanner .carousel-item').height($(window).height());
    </script>
 

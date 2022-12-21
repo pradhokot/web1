@@ -13,13 +13,140 @@
    </header>
 
    <main class="wrapper">
-      <section>
-         <div class="container"></div>
+      <section class="mb-0" style="background-color: transparent; padding-bottom: 1px;">
+         <header class="mb-3">
+            <div class="container">
+               <div class="row align-items-md-center justify-content-md-between">
+                  <div class="col-md-auto">
+                     <h4 class="fw-medium mb-md-0">Coffee Collection</h4>
+                  </div>
+                  <div class="col-md-auto">
+                     <button class="btn p-0 rounded-0" data-toggle="collapse" data-target="#productFilter">
+                        <i class="bi bi-funnel"></i> Filter | Sort by
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <!-- outer shown fitlers on -->
+         <div class="collapse">
+            <div class="container">
+               <nav id="filterThumbnails">
+                  <button class="btn btn-sm btn-light mb-1">collection : single origin <i
+                        class="bi bi-x-circle ml-1"></i></button>
+                  <button class="btn btn-sm btn-light mb-1">type : arabica <i class="bi bi-x-circle ml-1"></i></button>
+                  <button class="btn btn-sm btn-light mb-1">form : beans <i class="bi bi-x-circle ml-1"></i></button>
+                  <button class="btn btn-sm btn-light mb-1">packaging : can <i class="bi bi-x-circle ml-1"></i></button>
+                  <button class="btn btn-sm btn-light mb-1">weight : 200g <i class="bi bi-x-circle ml-1"></i></button>
+                  <button class="btn btn-sm btn-light mb-1">sortby : latest product <i
+                        class="bi bi-x-circle ml-1"></i></button>
+               </nav>
+            </div>
+         </div>
+         <style>
+            #filterThumbnails .btn {
+               text-transform: capitalize;
+            }
+         </style>
+
+         <!-- product filter -->
+         <div class="collapse" id="productFilter">
+            <div class="container">
+               <div class="card">
+                  <div class="card-body px-0">
+                     <div class="container-fluid">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+                           <div class="col">
+                              <h5 class="filter-title">collection</h5>
+                              <ul class="list-unstyled filter-list">
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                              </ul>
+                           </div>
+
+                           <div class="col">
+                              <h5 class="filter-title">collection</h5>
+                              <ul class="list-unstyled filter-list">
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                              </ul>
+                           </div>
+
+                           <div class="col">
+                              <h5 class="filter-title">collection</h5>
+                              <ul class="list-unstyled filter-list">
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                              </ul>
+                           </div>
+
+                           <div class="col">
+                              <h5 class="filter-title">collection</h5>
+                              <ul class="list-unstyled filter-list">
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                                 <li class="filter-item">single origin</li>
+                              </ul>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <style>
+            #productFilter .filter-title {
+               font-size: 1.15rem !important;
+               font-family: 'GoogleMedium';
+               text-transform: capitalize;
+            }
+         </style>
+      </section>
+
+      <!-- product list -->
+      <section id="productList" style="height: 1200px;">
+         <div class="container">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi maxime assumenda sunt rem beatae
+               nostrum voluptates laudantium, ipsam molestias debitis id quisquam non aut corporis. Dolore corrupti
+               molestias itaque!
+            </p>
+         </div>
       </section>
    </main>
 
    <script src="copyright.js"></script>
    <script src="footer.js"></script>
+   <script>
+      // active link
+      $('#navCoffee, #footerBeans, #footerGround, #footerDrip, #footerCapsules').addClass('active');
+      // const menus = document.querySelectorAll('#navCoffee, #footerBeans, #footerGround, #footerDrip, #footerCapsules');
+      // for (const menu of menus) {
+      //    menu.classList.add('active');
+      // }
+   </script>
 
 </body>
 
