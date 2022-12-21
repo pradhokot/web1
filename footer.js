@@ -6,12 +6,22 @@ document.write(`
 $(window).scroll(function () {
    if ($(window).scrollTop() >= 150) {
       $('#navtop').addClass('shrink');
-      $('#notifikasi').collapse('hide');
    } else {
       $('#navtop').removeClass('shrink');
-      $('#notifikasi').collapse('show');
    }
 });
+
+// notifikasi hide & show when scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+   var currentScrollPos = window.pageYOffset;
+   if (prevScrollpos > currentScrollPos) {
+      $('#notifikasi').collapse('show');
+   } else {
+      $('#notifikasi').collapse('hide');
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 // navbar open on mobile
 $('#navcol').on('show.bs.collapse', function() {

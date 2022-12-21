@@ -1,7 +1,7 @@
 document.write(`
 <div class="collapse show fixed-bottom" id="notifikasi">
    <div class="container-lg">
-      <div class="bg-white border mb-lg-2" style="line-height: 1;">
+      <div class="bg-white border mb-lg-2 shadow" style="line-height: 1;">
          <div class="container-fluid py-2">
             <div class="row g-1 align-items-center justify-content-lg-around">
                <div class="col-lg-auto">
@@ -31,6 +31,12 @@ document.write(`
    @media (max-width: 991.98px) {
       #notifikasi>div {
          padding: 0;
+      }
+   }
+
+   @media (min-width: 992px) {
+      #notifikasi .bg-white {
+         border-radius: .25rem;
       }
    }
 </style>
