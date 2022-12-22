@@ -41,9 +41,7 @@ document.write(`
       font-family: 'Google', sans-serif;
    }
 
-   * {
-      // outline: solid 1px green;
-   }
+   // * {outline: solid 1px green;}
 
    .wrapper {
       min-height: calc(100vh - 245px);

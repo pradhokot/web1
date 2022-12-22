@@ -26,6 +26,7 @@ document.write(`
       </style>
       <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navcol" style="width: 56px; height: 40px; margin-right: -.75rem;">
          <i class="bi bi-three-dots-vertical"></i>
+         <i class="bi bi-three-dots"></i>
       </button>
       <style>
          @media (max-width: 991.98px) {
@@ -207,6 +208,14 @@ document.write(`
       #navtop.shrink.nav-open .navbar.navbar-dark * {
          color: #323232;
       }
+
+      #navtop .navbar-toggler .bi-three-dots {display: none;}
+      #navtop .navbar-toggler .bi-three-dots-vertical {display: inline;}
+
+      #navtop.nav-open .navbar-toggler .bi-three-dots,
+      #navtop.shrink.nav-open .navbar-toggler .bi-three-dots {display: inline;}
+      #navtop.nav-open .navbar-toggler .bi-three-dots-vertical,
+      #navtop.shrink.nav-open .navbar-toggler .bi-three-dots-vertical {display: none;}
    }
 </style>
 `)
