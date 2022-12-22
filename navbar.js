@@ -18,19 +18,11 @@ document.write(`
       </style>
       <div class="navbar-btn-group d-flex align-content-center ml-auto order-lg-3 ml-lg-0">
          <a href="#" class="btn" id="navUser"><i class="bi bi-person-circle"></i></a>
-         <div class="position-relative">
-            <a href="#" class="btn" id="navCart">
-               <i class="bi bi-cart"></i>
-            </a>
-            <span class="badge badge-danger text-white" style="position: absolute; top: 22.5%; left: 75%; transform: translate(-50%, -50%); padding-right: .6em; padding-left: .6em; border-radius: 10rem; line-height: 1.125;">+99</span>
-         </div>
+         <a href="#" class="position-relative text-decoration-none">
+            <button class="btn" id="navCart"><i class="bi bi-cart"></i></button>
+            <span class="badge bg-danger text-light rounded-pill" style="height: 18px; min-width: 18px; position: absolute; top: 0; left: calc(100% - .75rem); transform: translateX(-50%);">99+</span>
+         </a>
       </div>
-      <style>
-         @media (min-width: 992px) {
-            #navtop .navbar-btn-group .badge {
-               top: 12.5%!important;
-            }
-         }
       </style>
       <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navcol" style="width: 56px; height: 40px; margin-right: -.75rem;">
          <i class="bi bi-three-dots-vertical"></i>
@@ -39,6 +31,11 @@ document.write(`
          @media (max-width: 991.98px) {
             #navtop .navbar-btn-group .btn,
             #navtop .navbar-toggler {
+               font-size: 1.25rem;
+            }
+         }
+         @media (min-width: 992px) {
+            #navtop .navbar .btn {
                font-size: 1.25rem;
             }
          }
