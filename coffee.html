@@ -51,7 +51,7 @@
          </style>
 
          <!-- product filter -->
-         <div class="collapse" id="productFilter">
+         <div class="collapse show" id="productFilter">
             <div class="container">
                <div class="card">
                   <div class="card-body px-0">
@@ -60,15 +60,50 @@
 
                            <div class="col">
                               <h5 class="filter-title">collection</h5>
-                              <ul class="list-unstyled filter-list">
-                                 <li class="filter-item">single origin</li>
-                                 <li class="filter-item">single origin</li>
-                                 <li class="filter-item">single origin</li>
-                                 <li class="filter-item">single origin</li>
-                                 <li class="filter-item">single origin</li>
-                                 <li class="filter-item">single origin</li>
-                                 <li class="filter-item">single origin</li>
-                              </ul>
+                              <form action="">
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterCollectionSO">
+                                    <label class="form-check-label" for="filterCollectionSO">single origin</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterCollectionLuwak">
+                                    <label class="form-check-label" for="filterCollectionLuwak">luwak prestige</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterCollectionOrganic">
+                                    <label class="form-check-label" for="filterCollectionOrganic">organic</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterCollectionRainforest">
+                                    <label class="form-check-label" for="filterCollectionRainforest">rainforest</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterCollectionGourmet">
+                                    <label class="form-check-label" for="filterCollectionGourmet">gourmet</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterCollectionWB">
+                                    <label class="form-check-label" for="filterCollectionWB">world blend</label>
+                                 </div>
+                              </form>
+                           </div>
+
+                           <div class="col">
+                              <h5 class="filter-title">type</h5>
+                              <form action="">
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterTypeArabica">
+                                    <label class="form-check-label" for="filterTypeArabica">arabica</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterTypeRobusta">
+                                    <label class="form-check-label" for="filterTypeRobusta">robusta</label>
+                                 </div>
+                                 <div class="form-check text-capitalize">
+                                    <input class="form-check-input" type="checkbox" id="filterTypeBlend">
+                                    <label class="form-check-label" for="filterTypeBlend">blend</label>
+                                 </div>
+                              </form>
                            </div>
 
                            <div class="col">
@@ -118,7 +153,7 @@
          </div>
          <style>
             #productFilter .filter-title {
-               font-size: 1.15rem !important;
+               font-size: 1.125rem !important;
                font-family: 'GoogleMedium';
                text-transform: capitalize;
             }

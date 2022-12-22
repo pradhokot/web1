@@ -30,10 +30,5 @@ $('#navcol').on('show.bs.collapse', function() {
 $('#navcol').on('hide.bs.collapse', function() {
    $('#navtop').removeClass('nav-open');
 });
-
-// select input
-$('input, textarea, .navbar form').hover(function() {
-   $('input, textarea').select();
-});
 </script>
 `);

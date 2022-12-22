@@ -43,7 +43,7 @@ document.write(`
       </style>
       <div class="collapse navbar-collapse" id="navcol">
          <form action="" class="d-flex flex-nowrap mt-2 mb-3 my-lg-0 order-lg-2">
-            <input type="search" class="form-control px-0 bg-transparent border-0" placeholder="Search"
+            <input type="search" class="form-control px-0 bg-transparent border-0" placeholder="Search" onmouseover="this.select()"
                style="font-size: inherit; color: inherit;">
             <button class="btn"><i class="bi bi-search"></i></button>
          </form>

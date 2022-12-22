@@ -13,7 +13,7 @@ document.write(`
                   <form action="">
                      <div class="form-group border-bottom mb-0" style="border-color: #878787!important;">
                         <input type="email" class="form-control bg-transparent rounded-0 border-0 w-100 px-0"
-                           placeholder="Email Address*">
+                           placeholder="Email Address*" onmouseover="this.select()">
                      </div>
                   </form>
                </div>

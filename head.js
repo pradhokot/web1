@@ -44,7 +44,6 @@ document.write(`
    // * {outline: solid 1px green;}
 
    .wrapper {
-      min-height: calc(100vh - 245px);
       padding-top: 70px;
    }
 
@@ -168,19 +167,22 @@ document.write(`
       text-transform: capitalize;
       margin: 0 auto;
       border-width: 0;
+      border-radius: 0;
    }
-
+   
    .card-product .card-header {
       position: relative; 
       background-color: transparent;
       border-width: 0;
       padding: 0;
+      border-radius: 0;
    }
-
+   
    .card-product .card-img {
       display: block;
       padding-top: 100%; 
       position: relative;
+      border-radius: 0;
    }
 
    .card-product .position-wobler {
