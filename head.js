@@ -65,12 +65,6 @@ document.write(`
       color: inherit!important;
       opacity: .5!important;
    }
-
-   .btn-primary {
-      color: white;
-      background-color: #fd4f00;
-      border-color: #fd4f00;
-   }
    
    /* custom button */
    button:focus, input:focus, select:focus, textarea:focus, .btn, .form-control, .navbar-toggler:focus {
@@ -78,12 +72,57 @@ document.write(`
       box-shadow: none!important;
       text-decoration: none!important;
    }
+   
+   .btn-primary {
+      color: white;
+      background-color: #fd4f00;
+      border-color: #fd4f00;
+   }
 
    .btn-primary:hover,
    .btn-primary.active {
       color: white;
       background-color: #fd1e00;
       border-color: #fd1e00;
+   }
+
+   .btn-light {
+      color: #323232;
+      background-color: #f4f4f4;
+      border-color: #f4f4f4;
+   }
+
+   .btn-light:hover,
+   .btn-light.active {
+      color: #323232;
+      background-color: #e4e4e4;
+      border-color: #e4e4e4;
+   }
+
+   .btn-secondary {
+      color: #323232;
+      background-color: #d9d9d9;
+      border-color: #d9d9d9;
+   }
+
+   .btn-secondary:hover,
+   .btn-secondary.active {
+      color: #white;
+      background-color: #999;
+      border-color: #999;
+   }
+
+   .btn-dark {
+      color: white;
+      background-color: #656565;
+      border-color: #656565;
+   }
+
+   .btn-dark:hover,
+   .btn-dark.active {
+      color: white;
+      background-color: #323232;
+      border-color: #323232;
    }
 
    /* grid */
@@ -223,7 +262,7 @@ document.write(`
    }
 
    .card-product .btn-addtocart:hover {
-      background-color: #646464;
+      background-color: #323232;
    }
 
    .card-product .card-body {
@@ -336,6 +375,32 @@ document.write(`
       align-items: center;
       z-index: 100;
       font-size: 1.25rem;
+   }
+
+   /* form check */
+   .form-check-input {
+      opacity: 0;
+      visible: hidden;
+   }
+
+   .form-check input,
+   .form-check label {
+      cursor: pointer;
+   }
+
+   .form-check-circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: .3rem;
+      width: 13px;
+      height: 13px;
+      border-radius: 100%;
+      background-color: #a9a9a9;
+   }
+
+   .form-check input:checked ~ .form-check-circle {
+      background-color: #323232;
    }
 </style>
 `)

@@ -199,7 +199,8 @@ document.write(`
       #navtop.nav-open .navbar,
       #navtop.shrink.nav-open .navbar,
       #navtop.shrink.nav-open .navbar.navbar-dark {
-         background-color: rgba(255,255,255, 1);
+         // background-color: rgba(255,255,255, 1);
+         background-color: #f8f9fa!important;
       }
       
       #navtop.nav-open .navbar *,
@@ -212,10 +213,10 @@ document.write(`
       #navtop .navbar-toggler .bi-three-dots {display: none;}
       #navtop .navbar-toggler .bi-three-dots-vertical {display: inline;}
 
-      #navtop.nav-open .navbar-toggler .bi-three-dots,
-      #navtop.shrink.nav-open .navbar-toggler .bi-three-dots {display: inline;}
-      #navtop.nav-open .navbar-toggler .bi-three-dots-vertical,
-      #navtop.shrink.nav-open .navbar-toggler .bi-three-dots-vertical {display: none;}
+      // #navtop.nav-open .navbar-toggler .bi-three-dots,
+      // #navtop.shrink.nav-open .navbar-toggler .bi-three-dots {display: inline;}
+      // #navtop.nav-open .navbar-toggler .bi-three-dots-vertical,
+      // #navtop.shrink.nav-open .navbar-toggler .bi-three-dots-vertical {display: none;}
    }
 </style>
 `)
