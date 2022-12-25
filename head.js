@@ -43,19 +43,11 @@ document.write(`
 
    // * {outline: solid 1px green;}
 
-   .wrapper {
-      padding-top: 70px;
-   }
-
    .wrapper section {
       margin-bottom: 5.5rem;
    }
    
    @media (min-width: 992px) {
-      .wrapper {
-         padding-top: 136px;
-      }
-
       .wrapper section {
          margin-bottom: 7rem;
       }

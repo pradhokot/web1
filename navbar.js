@@ -120,6 +120,22 @@ document.write(`
    </div>
 </nav>
 <style>
+   #navtop {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+   }
+   
+   #navtop.shrink,
+   #navtop.nav-open,
+   #navtop.shrink.nav-open {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+   }
+
    #navtop .navbar * {
       line-height: 1;
       border-radius: 0;
