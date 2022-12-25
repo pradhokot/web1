@@ -20,7 +20,7 @@ document.write(`
          <a href="#" class="btn" id="navUser"><i class="bi bi-person-circle"></i></a>
          <a href="#" class="position-relative text-decoration-none">
             <button class="btn" id="navCart"><i class="bi bi-cart"></i></button>
-            <span class="badge bg-danger text-light rounded-pill" style="height: 18px; min-width: 18px; position: absolute; top: 0; left: calc(100% - .75rem); transform: translateX(-50%);">99+</span>
+            <span class="badge rounded-pill" style="height: 18px; min-width: 18px; position: absolute; top: 0; left: calc(100% - .75rem); transform: translateX(-50%); background-color: red; color: white;">99+</span>
          </a>
       </div>
       </style>
@@ -120,22 +120,6 @@ document.write(`
    </div>
 </nav>
 <style>
-   #navtop {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: 1030;
-   }
-   
-   #navtop.shrink,
-   #navtop.nav-open,
-   #navtop.shrink.nav-open {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-   }
-
    #navtop .navbar * {
       line-height: 1;
       border-radius: 0;
@@ -162,7 +146,7 @@ document.write(`
    #navtop .navbar .nav-link,
    #navtop .navbar .btn,
    #navtop .navbar .form-select {
-      opacity: .75;
+      opacity: .62;
       transition: .36s;
    }
 

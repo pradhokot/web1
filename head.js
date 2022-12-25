@@ -264,7 +264,7 @@ document.write(`
    }
 
    .card-product .card-title {
-      font-family: 'GoogleBold';
+      font-family: 'GoogleMedium';
       margin-bottom: 0;
       line-height: normal;
    }

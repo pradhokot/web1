@@ -40,7 +40,7 @@ document.write(`
                </nav>
             </div>
             <div class="col-xl-auto">
-               <span style="opacity: .75;">Copyright &copy; 2022 INDRACO. All rights reserved.</span>
+               <span style="opacity: .62;">Copyright &copy; 2022 INDRACO. All rights reserved.</span>
             </div>
          </div>
       </div>
@@ -53,7 +53,7 @@ document.write(`
    }
 
    #copyright a {
-      opacity: .875;
+      opacity: .72;
    }
 
    #copyright a:hover,

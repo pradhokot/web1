@@ -4,7 +4,7 @@ document.write(`
    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
          <div class="modal-header pb-0 border-0">
-            <h5 class="modal-title">1 item added to your cart</h5>
+            <h5 class="modal-title">+ 1 item added to your cart</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
             </button>

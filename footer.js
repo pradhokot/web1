@@ -30,5 +30,8 @@ $('#navcol').on('show.bs.collapse', function() {
 $('#navcol').on('hide.bs.collapse', function() {
    $('#navtop').removeClass('nav-open');
 });
+
+// padding top wrapper
+$('.wrapper').css({ 'padding-top': ($('#navtop').height()) });
 </script>
 `);

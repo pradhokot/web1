@@ -1,7 +1,7 @@
 document.write(`
 <div class="card card-product">
    <div class="card-header">
-      <a href="#" class="card-img">
+      <a href="detailCoffee.html" class="card-img">
          <img src="assets/img/product/produk1.png" class="img-fluid w-100" alt="">
          <img src="assets/img/product/produk2.png" class="img-fluid w-100" alt="">
          <span class="position-wobler"><span class="wobler">20%</span></span>
