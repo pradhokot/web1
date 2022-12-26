@@ -24,8 +24,7 @@
                <div class="col-lg-7 col-xl-auto">
 
                   <!-- image product -->
-                  <div id="imgProduct" class="carousel slide mb-4 d-xl-flex" data-ride="false"
-                     style="max-width: 715px;">
+                  <div id="imgProduct" class="carousel slide mb-4 d-md-flex d-lg-block d-xl-flex" data-ride="false">
                      <div class="carousel-inner mb-2 order-xl-2 mb-xl-0">
                         <div class="carousel-item active">
                            <img src="assets/img/product/produk1.png" class="d-block w-100" alt="">
@@ -47,7 +46,7 @@
                            <span class="bi bi-chevron-right"></span>
                         </button>
                      </div>
-                     <ol class="carousel-indicators position-relative">
+                     <ol class="carousel-indicators position-relative order-xl-1">
                         <li data-target="#imgProduct" data-slide-to="0" class="active">
                            <img src="assets/img/product/produk1.png" class="img-fluid" alt="">
                         </li>
@@ -91,6 +90,25 @@
                         background-color: #e4e4e4;
                      }
 
+                     @media (min-width: 768px) and (max-width: 991.98px) {
+                        #imgProduct .carousel-inner {
+                           max-width: 543px;
+                        }
+
+                        #imgProduct .carousel-indicators {
+                           flex-direction: column;
+                           justify-content: flex-start;
+                           width: 18%;
+                           margin: 0 0 0 15px;
+                        }
+
+                        #imgProduct .carousel-indicators li {
+                           padding: 0;
+                           height: auto;
+                           margin-bottom: 15px;
+                        }
+                     }
+
                      @media (min-width: 1200px) {
                         #imgProduct .carousel-indicators {
                            flex-direction: column;
@@ -112,15 +130,26 @@
                   </style>
 
                   <!-- reviews product on desktop -->
-                  <div class="d-none d-lg-block" style="max-width: 715px;">
-                     <script src="reviewProduct.js"></script>
+                  <div id="reviewProductDesktop" class="d-none d-lg-block" style="max-width: 715px;">
+                     <div class="collapse" id="collapseReviews">
+                        <script src="reviewProduct.js"></script>
+                     </div>
                   </div>
+                  <style>
+                     @media (min-width: 1200px) {
+
+                        #imgProduct,
+                        #reviewProductDesktop {
+                           max-width: 715px;
+                        }
+                     }
+                  </style>
 
                </div>
 
                <!-- detail product -->
-               <div class="col-lg-5 col-xl-auto text-capitalize">
-                  <div style="max-width: 364.24px; margin-left: auto;">
+               <div id="detailProduct" class="col-lg-5 col-xl-auto text-capitalize">
+                  <div class="ml-xl-auto">
 
                      <h3 class="fw-medium mb-3">sumatra mandheling coffee capsules</h3>
 
@@ -199,7 +228,7 @@
                               Details
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
-                           <div class="collapse" id="collapseDetails" data-parent="#listDetailsProduct">
+                           <div class="collapse" id="collapseDetails" data-parent="#sectionDetailProduct">
                               <p class="text-justify">
                                  50% Arabica - 50% Robusta. A 50/50 blend of Arabica and Robusta beans made with coffee
                                  grown and farmed in Indonesia and roasted with the City+ Roast mode. With a lower
@@ -249,7 +278,7 @@
                               How to ?
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
-                           <div class="collapse" id="collapseHowto" data-parent="#listDetailsProduct">
+                           <div class="collapse" id="collapseHowto" data-parent="#sectionDetailProduct">
                               <p>
                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam modi illo
                                  quos voluptas accusamus nobis sapiente a, voluptatibus facere illum repudiandae magni
@@ -263,7 +292,7 @@
                               Packaging
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
-                           <div class="collapse" id="collapsePackaging" data-parent="#listDetailsProduct">
+                           <div class="collapse" id="collapsePackaging" data-parent="#sectionDetailProduct">
                               <p>
                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam modi illo
                                  quos voluptas accusamus nobis sapiente a, voluptatibus facere illum repudiandae magni
@@ -315,9 +344,25 @@
             </div>
 
             <!-- reviews product on mobile -->
-            <div class="d-lg-none">
-               <script src="reviewProduct.js"></script>
+            <div id="reviewProductMobile" class="d-lg-none">
+               <div class="collapse" id="collapseReviews" data-parent="#sectionDetailProduct">
+                  <script src="reviewProduct.js"></script>
+               </div>
             </div>
+            <style>
+               #detailProduct>div,
+               #reviewProductMobile {
+                  max-width: 542px;
+               }
+
+               @media (min-width: 1200px) {
+
+                  #detailProduct>div,
+                  #reviewProductMobile {
+                     max-width: 364.24px;
+                  }
+               }
+            </style>
          </div>
       </section>
 
