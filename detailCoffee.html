@@ -16,16 +16,17 @@
 
       <section>
          <div class="container">
-            <a href="#" class="text-dark d-inline-block mb-3">
+            <a href="coffee.html" class="text-dark d-inline-block mb-3">
                <i class="bi bi-chevron-left"></i> Back To Product Category
             </a>
-            <div class="row justify-content-xl-around">
+            <div class="row justify-content-xl-between">
 
-               <div class="col-lg-6 col-xl-7">
+               <div class="col-lg-7 col-xl-auto">
 
                   <!-- image product -->
-                  <div id="imgProduct" class="carousel slide mb-4" data-ride="false">
-                     <div class="carousel-inner mb-2">
+                  <div id="imgProduct" class="carousel slide mb-4 d-xl-flex" data-ride="false"
+                     style="max-width: 715px;">
+                     <div class="carousel-inner mb-2 order-xl-2 mb-xl-0">
                         <div class="carousel-item active">
                            <img src="assets/img/product/produk1.png" class="d-block w-100" alt="">
                         </div>
@@ -89,14 +90,35 @@
                      #imgProduct .carousel-indicators li img {
                         background-color: #e4e4e4;
                      }
+
+                     @media (min-width: 1200px) {
+                        #imgProduct .carousel-indicators {
+                           flex-direction: column;
+                           justify-content: flex-start;
+                           width: 15%;
+                           margin: 0 15px 0 0;
+                        }
+
+                        #imgProduct .carousel-indicators li {
+                           padding: 0;
+                           height: auto;
+                           margin-bottom: 15px;
+                        }
+                     }
+
+                     #imgProduct img {
+                        border-radius: .25rem;
+                     }
                   </style>
 
                </div>
 
                <!-- detail product -->
-               <div class="col-lg-6 col-xl-5 text-capitalize">
+               <div class="col-lg-5 col-xl-auto text-capitalize">
                   <div style="max-width: 364.24px; margin-left: auto;">
+
                      <h3 class="fw-medium mb-3">sumatra mandheling coffee capsules</h3>
+
                      <p class="mb-3">
                         Coffee Form
                         <br>
@@ -105,6 +127,7 @@
                         <button class="btn btn-sm btn-secondary mb-1">Drip</button>
                         <button class="btn btn-sm btn-secondary mb-1">Capsules</button>
                      </p>
+
                      <p class="mb-3">
                         Weight
                         <br>
@@ -116,10 +139,14 @@
                         <button class="btn btn-sm btn-secondary mb-1">500g</button>
                         <button class="btn btn-sm btn-secondary mb-1">1000g</button>
                      </p>
-                     <p class="mb-2 text-right"><span class="text-white px-3 py-2 fw-medium d-inline-block"
-                           style="background-color: red;">SAVE
-                           30%</span></p>
-                     <div class="product-price mb-3" style="font-size: 1.75rem;">
+
+                     <p class="mb-2 text-right">
+                        <span class="text-white px-3 py-2 fw-medium d-inline-block" style="background-color: red;">
+                           SAVE 30%
+                        </span>
+                     </p>
+
+                     <div class="product-price mb-3" style="font-size: 1.75rem; margin-left: -.25rem;">
                         <div class="reguler-price d-none">Rp 200.000,-</div>
                         <div class="promo-price justify-content-start">
                            <span class="discount-price">Rp 125.000,-</span>
@@ -127,18 +154,110 @@
                                  200.000,-</del></span>
                         </div>
                      </div>
-                     <div class="alert alert-success mb-2">
-                        + 1 item successfully added to your cart
-                        <button class="close" data-dismiss="alert">
-                           <i class="bi bi-x-circle"></i>
+
+                     <div class="input-group align-items-center mb-3" style="font-size: 1.25rem;">
+                        <div class="input-group-prepend mr-auto">Quantity</div>
+                        <div class="input-group-prepend">
+                           <button class="btn p-0" style="font-size: 1.25rem;">
+                              <i class="bi bi-dash-circle"></i>
+                           </button>
+                        </div>
+                        <input class="form-control text-center p-0 h-auto border-0" value="1" min="1" max="100"
+                           style="font-size: 1.25rem; max-width: 50px;">
+                        <div class="input-group-append">
+                           <button class="btn p-0" style="font-size: 1.25rem;">
+                              <i class="bi bi-plus-circle"></i>
+                           </button>
+                        </div>
+                     </div>
+
+                     <div class="alert alert-success alert-dismissible mb-2">
+                        + 1 item added to your cart
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
                         </button>
                      </div>
+
                      <div class="mb-5">
                         <button class="btn btn-lg btn-block btn-primary">
                            Add To Cart <i class="bi bi-cart-plus"></i>
                         </button>
                         <a href="#" class="btn btn-lg btn-block btn-secondary">Shopping Cart & Checkout</a>
                      </div>
+
+                     <hr class="border-secondary m-0">
+
+                     <ul class="list-group list-group-flush" id="listDetailsProduct">
+                        <li class="list-group-item">
+                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapseDetails">
+                              Details
+                              <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
+                           </button>
+                           <div class="collapse" id="collapseDetails" data-parent="#listDetailsProduct">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab provident eaque
+                                 expedita ut aliquid deserunt, nulla ipsa nobis exercitationem! Magnam voluptatem
+                                 obcaecati beatae quae doloremque aperiam, excepturi nihil! Beatae.</p>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapseHowto">
+                              How to ?
+                              <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
+                           </button>
+                           <div class="collapse" id="collapseHowto" data-parent="#listDetailsProduct">
+                              <p>
+                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam modi illo
+                                 quos voluptas accusamus nobis sapiente a, voluptatibus facere illum repudiandae magni
+                                 tenetur nam, saepe atque quam aliquam laborum!
+                              </p>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapsePackaging">
+                              Packaging
+                              <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
+                           </button>
+                           <div class="collapse" id="collapsePackaging" data-parent="#listDetailsProduct"></div>
+                        </li>
+                        <li class="list-group-item">
+                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapseReviews">
+                              Reviews
+                              <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
+                           </button>
+                           <div class="collapse" id="collapseReviews" data-parent="#listDetailsProduct"></div>
+                        </li>
+                     </ul>
+                     <style>
+                        #listDetailsProduct li {
+                           padding: 0;
+                           border-color: #6c757d !important;
+                        }
+
+                        #listDetailsProduct .btn {
+                           padding: .75rem 0;
+                           display: flex;
+                           justify-content: space-between;
+                           align-items: center;
+                           width: 100%;
+                        }
+
+                        #listDetailsProduct .btn.collapsed .bi-chevron-down {
+                           display: block;
+                        }
+
+                        #listDetailsProduct .btn.collapsed .bi-chevron-up {
+                           display: none;
+                        }
+
+                        #listDetailsProduct .btn .bi-chevron-down {
+                           display: none;
+                        }
+
+                        #listDetailsProduct .btn .bi-chevron-up {
+                           display: block;
+                        }
+                     </style>
+
                   </div>
                </div>
 
