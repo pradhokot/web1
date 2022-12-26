@@ -32,6 +32,6 @@ $('#navcol').on('hide.bs.collapse', function() {
 });
 
 // padding top wrapper
-$('.wrapper').css({ 'padding-top': ($('#navtop').height()) });
+// $('.wrapper').css({ 'padding-top': ($('#navtop').height()) });
 </script>
 `);
