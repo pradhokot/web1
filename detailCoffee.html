@@ -14,13 +14,13 @@
 
    <main class="wrapper">
 
-      <section>
+      <section id="sectionDetailProduct">
          <div class="container">
             <a href="coffee.html" class="text-dark d-inline-block mb-3">
                <i class="bi bi-chevron-left"></i> Back To Product Category
             </a>
-            <div class="row justify-content-xl-between">
 
+            <div class="row justify-content-xl-between mb-4">
                <div class="col-lg-7 col-xl-auto">
 
                   <!-- image product -->
@@ -111,6 +111,11 @@
                      }
                   </style>
 
+                  <!-- reviews product on desktop -->
+                  <div class="d-none d-lg-block" style="max-width: 715px;">
+                     <script src="reviewProduct.js"></script>
+                  </div>
+
                </div>
 
                <!-- detail product -->
@@ -146,7 +151,7 @@
                         </span>
                      </p>
 
-                     <div class="product-price mb-3" style="font-size: 1.75rem; margin-left: -.25rem;">
+                     <div class="product-price mb-3" style="font-size: calc(1.5rem + .1vw); margin-left: -.25rem;">
                         <div class="reguler-price d-none">Rp 200.000,-</div>
                         <div class="promo-price justify-content-start">
                            <span class="discount-price">Rp 125.000,-</span>
@@ -162,8 +167,8 @@
                               <i class="bi bi-dash-circle"></i>
                            </button>
                         </div>
-                        <input class="form-control text-center p-0 h-auto border-0" value="1" min="1" max="100"
-                           style="font-size: 1.25rem; max-width: 50px;">
+                        <input class="form-control text-center p-0 h-auto border-left-0 border-top-0 border-right-0"
+                           value="1" min="1" max="100" style="font-size: 1.25rem; max-width: 50px;">
                         <div class="input-group-append">
                            <button class="btn p-0" style="font-size: 1.25rem;">
                               <i class="bi bi-plus-circle"></i>
@@ -189,11 +194,12 @@
 
                      <ul class="list-group list-group-flush" id="listDetailsProduct">
                         <li class="list-group-item">
-                           <button class="btn" data-toggle="collapse" data-target="#collapseDetails">
+                           <button class="btn fw-medium collapsed" data-toggle="collapse"
+                              data-target="#collapseDetails">
                               Details
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
-                           <div class="collapse show" id="collapseDetails" data-parent="#listDetailsProduct">
+                           <div class="collapse" id="collapseDetails" data-parent="#listDetailsProduct">
                               <p class="text-justify">
                                  50% Arabica - 50% Robusta. A 50/50 blend of Arabica and Robusta beans made with coffee
                                  grown and farmed in Indonesia and roasted with the City+ Roast mode. With a lower
@@ -239,7 +245,7 @@
                            </div>
                         </li>
                         <li class="list-group-item">
-                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapseHowto">
+                           <button class="btn fw-medium collapsed" data-toggle="collapse" data-target="#collapseHowto">
                               How to ?
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
@@ -252,7 +258,8 @@
                            </div>
                         </li>
                         <li class="list-group-item">
-                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapsePackaging">
+                           <button class="btn fw-medium collapsed" data-toggle="collapse"
+                              data-target="#collapsePackaging">
                               Packaging
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
@@ -265,11 +272,11 @@
                            </div>
                         </li>
                         <li class="list-group-item">
-                           <button class="btn collapsed" data-toggle="collapse" data-target="#collapseReviews">
+                           <button class="btn fw-medium collapsed" data-toggle="collapse"
+                              data-target="#collapseReviews">
                               Reviews
                               <span class="bi bi-chevron-down"></span> <span class="bi bi-chevron-up"></span>
                            </button>
-                           <div class="collapse" id="collapseReviews" data-parent="#listDetailsProduct"></div>
                         </li>
                      </ul>
                      <style>
@@ -305,17 +312,18 @@
 
                   </div>
                </div>
+            </div>
 
-               <!-- reviews product 2 -->
-               <div class="col-12"></div>
-
+            <!-- reviews product on mobile -->
+            <div class="d-lg-none">
+               <script src="reviewProduct.js"></script>
             </div>
          </div>
       </section>
 
       <section>
          <div class="container">
-            <h5 class="fw-medium mb-3">Related Products</h5>
+            <h4 class="fw-medium mb-3">Related Products</h4>
             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
                <div class="col">
                   <script src="productItem.js"></script>
