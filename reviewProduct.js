@@ -26,7 +26,7 @@ document.write(`
    <div class="col-md-8">
       <ul class="list-unstyled mb-0">
          <li class="media align-items-center">
-            <div style="width: 24px; text-align: center;">5</div>
+            <div class="fw-medium" style="width: 32px; text-align: center; font-size: 1.25rem;">5</div>
             <div class="media-body">
                <div class="progress rounded-pill">
                   <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -35,7 +35,7 @@ document.write(`
             </div>
          </li>
          <li class="media align-items-center">
-            <div style="width: 24px; text-align: center;">4</div>
+            <div class="fw-medium" style="width: 32px; text-align: center; font-size: 1.25rem;">4</div>
             <div class="media-body">
                <div class="progress rounded-pill">
                   <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -44,7 +44,7 @@ document.write(`
             </div>
          </li>
          <li class="media align-items-center">
-            <div style="width: 24px; text-align: center;">3</div>
+            <div class="fw-medium" style="width: 32px; text-align: center; font-size: 1.25rem;">3</div>
             <div class="media-body">
                <div class="progress rounded-pill">
                   <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -53,7 +53,7 @@ document.write(`
             </div>
          </li>
          <li class="media align-items-center">
-            <div style="width: 24px; text-align: center;">2</div>
+            <div class="fw-medium" style="width: 32px; text-align: center; font-size: 1.25rem;">2</div>
             <div class="media-body">
                <div class="progress rounded-pill">
                   <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -62,7 +62,7 @@ document.write(`
             </div>
          </li>
          <li class="media align-items-center">
-            <div style="width: 24px; text-align: center;">1</div>
+            <div class="fw-medium" style="width: 32px; text-align: center; font-size: 1.25rem;">1</div>
             <div class="media-body">
                <div class="progress rounded-pill">
                   <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25"
