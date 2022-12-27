@@ -16,25 +16,113 @@
 
       <section>
          <div class="container">
-            <div class="row">
+            <div class="row justify-content-xl-between">
 
-               <!-- shopping cart list -->
                <div class="col-lg-7 col-xl-auto">
+                  <!-- konten -->
                   <div class="konten">
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem facilis unde expedita
-                        officiis! Illum quia nesciunt necessitatibus qui cum sint dolores fugit, aliquam ipsum nostrum
-                        dicta minus sunt doloremque.</p>
+                     <h4 class="fw-medium">Shopping Cart</h4>
+                     <p class="mb-4">(A total of 0 pcs)</p>
+                     <hr class="border-dark mb-0">
+
+                     <!-- cart list -->
+                     <ul class="list-unstyled cart-list mb-5 mb-lg-0">
+                        <!-- cart item -->
+                        <li>
+                           <script src="cartItem.js"></script>
+                        </li>
+                        <li>
+                           <script src="cartItem.js"></script>
+                        </li>
+                        <li>
+                           <script src="cartItem.js"></script>
+                        </li>
+                        <!-- cart item khusus gift -->
+                        <li class="collapse show" id="collapseGift">
+                           <div class="cart-item">
+                              <div class="row">
+                                 <div class="col col-12 col-xl-auto">
+                                    <div class="position-relative">
+                                       <button class="close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                 </div>
+                                 <div class="col col-5 col-sm-3 col-md-2 col-lg-3 col-xl-2">
+                                    <img src="assets/img/product/produk4.jpg" class="img-fluid w-100" alt="">
+                                 </div>
+                                 <div class="col col-7 col-sm-9 col-md-10 col-lg-9 col-xl">
+                                    <div class="row justify-content-md-between">
+                                       <div class="col col-12 col-md-5">
+                                          <p class="mb-2">
+                                             <span class="fw-medium">exotic blend coffee beans</span>
+                                             <small>200g</small>
+                                          </p>
+                                       </div>
+                                       <div class="col col-12 col-md-auto order-md-3">
+                                          <div class="product-price mb-2 mb-md-0 text-md-left">
+                                             <span style="color: #fd4f00;">FREE</span>
+                                          </div>
+                                       </div>
+                                       <div class="col col-12 col-md-auto order-md-2">
+                                          <div class="input-group align-items-center">
+                                             <div class="input-group-prepend">
+                                                <button class="btn p-0" style="font-size: 1.25rem; opacity: .25;"
+                                                   disabled>
+                                                   <i class="bi bi-dash-circle"></i>
+                                                </button>
+                                             </div>
+                                             <input
+                                                class="form-control text-center p-0 h-auto border-left-0 border-top-0 border-right-0 bg-transparent"
+                                                value="1" min="1" max="100" readonly
+                                                style="font-size: 1.25rem; max-width: 50px;">
+                                             <div class="input-group-append">
+                                                <button class="btn p-0" style="font-size: 1.25rem; opacity: .25;"
+                                                   disabled>
+                                                   <i class="bi bi-plus-circle"></i>
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <style>
+                        .cart-list li {
+                           border-bottom: 1px solid #ced4da;
+                        }
+
+                        .cart-list li:last-of-type {
+                           border-bottom: 1px solid transparent;
+                        }
+                     </style>
+                     <!-- end of cart list -->
+
                   </div>
+                  <style>
+                     @media (min-width: 992px) {
+                        .konten {
+                           max-width: 640px !important;
+                        }
+                     }
+                  </style>
                </div>
 
-               <!-- panel -->
                <div class="col-lg-5 col-xl-auto">
+                  <!-- panel -->
                   <div class="panel">
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci dolor corrupti
                         deserunt
                         sapiente repellat quas laborum delectus. Quod consequatur iure porro expedita atque labore
                         praesentium voluptates quis? Aliquam, debitis?</p>
                   </div>
+                  <style>
+                     .panel {
+                        max-width: 336px;
+                        margin-left: auto;
+                     }
+                  </style>
                </div>
 
             </div>
@@ -60,6 +148,14 @@
    <script>
       // active link
       document.querySelector('#navCart').classList.add('active');
+
+      $(document).ready(function () {
+         if ($('#collapseGift').hasClass('show')) {
+            $('.cart-list li:nth-last-child(2)').removeClass('border-0');
+         } else {
+            $('.cart-list li:nth-last-child(2)').addClass('border-0');
+         }
+      });
    </script>
 
 </body>

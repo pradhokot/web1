@@ -33,9 +33,7 @@ body {
    font-family: 'Google', sans-serif;
 }
 
-* {
-   /* outline: solid 1px green; */
-}
+/* * {outline: solid 1px green;} */
 
 .wrapper {
    padding-top: 70px;
@@ -250,7 +248,7 @@ textarea:focus,
 /* form check */
 .form-check-input {
    opacity: 0;
-   visible: hidden;
+   visibility: hidden;
 }
 
 .form-check input,
