@@ -57,7 +57,7 @@ document.write(`
                      <button class="btn btn-secondary w-100" data-dismiss="modal">Continue Shopping</button>
                   </div>
                   <div class="col pl-lg-2">
-                     <a href="#" class="btn btn-primary w-100">Shopping Cart & Checkout</a>
+                     <a href="cart.html" class="btn btn-primary w-100">Shopping Cart & Checkout</a>
                   </div>
                </div>
             </div>

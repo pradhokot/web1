@@ -272,3 +272,13 @@ textarea:focus,
 .form-check input:checked~.form-check-circle {
    background-color: #323232;
 }
+
+@media (min-width: 1200px) {
+   .konten {
+      max-width: 715px;
+   }
+
+   .panel {
+      max-width: 365px;
+   }
+}

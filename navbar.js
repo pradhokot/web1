@@ -18,7 +18,7 @@ document.write(`
       </style>
       <div class="navbar-btn-group d-flex align-content-center ml-auto order-lg-3 ml-lg-0">
          <a href="#" class="btn" id="navUser"><i class="bi bi-person-circle"></i></a>
-         <a href="#" class="position-relative text-decoration-none">
+         <a href="cart.html" class="position-relative text-decoration-none">
             <button class="btn" id="navCart"><i class="bi bi-cart"></i></button>
             <span class="badge rounded-pill" style="height: 18px; min-width: 18px; position: absolute; top: 0; left: calc(100% - .75rem); transform: translateX(-50%); background-color: #dc3545; color: white;">99+</span>
          </a>
