@@ -1,3 +1,4 @@
+document.write(`
 <div id="sliderProduct" class="carousel slide carousel-product" data-ride="carousel" data-interval="3000"
    data-pause="false">
    <div class="carousel-inner row w-100 mx-auto flex-nowrap" role="listbox">
@@ -35,3 +36,4 @@
       <span class="sr-only">Next</span>
    </a>
 </div>
+`);
