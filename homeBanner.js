@@ -1,6 +1,5 @@
 document.write(`
-<div id="homeBanner" class="carousel slide carousel-fade bg-dark overflow-hidden" data-ride="carousel"
-   data-pause="false">
+<div id="homeBanner" class="carousel slide carousel-fade bg-dark overflow-hidden" data-ride="carousel" data-interval="4000" data-pause="false">
    <div class="carousel-inner">
       <div class="carousel-item active">
          <div class="carousel-caption text-dark">
@@ -76,7 +75,7 @@ document.write(`
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-attachment: fixed;
+      // background-attachment: fixed;
    }
 
    #homeBanner .carousel-item::after {

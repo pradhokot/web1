@@ -64,7 +64,7 @@ document.write(`
    line-height: 1;
    font-family: 'GoogleBold';
    font-size: calc(1rem + .15vw);
-   outline: solid 1px white;
+   border: solid 1px white;
 }
 
 .card-product .btn-addtocart {

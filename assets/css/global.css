@@ -78,56 +78,69 @@ textarea:focus,
 }
 
 .btn-primary {
-   color: white;
-   background-color: #fd4f00;
-   border-color: #fd4f00;
+   color: white !important;
+   background-color: #fd4f00 !important;
+   border-color: #fd4f00 !important;
 }
 
 .btn-primary:hover,
 .btn-primary.active {
-   color: white;
-   background-color: #fd1e00;
-   border-color: #fd1e00;
+   color: white !important;
+   background-color: #fd1e00 !important;
+   border-color: #fd1e00 !important;
 }
 
-/* .btn-light {
-   color: #323232;
-   background-color: #f4f4f4;
-   border-color: #f4f4f4;
+.btn-light {
+   color: #323232 !important;
+   background-color: #f4f4f4 !important;
+   border-color: #f4f4f4 !important;
 }
 
 .btn-light:hover,
 .btn-light.active {
-   color: #323232;
-   background-color: #e4e4e4;
-   border-color: #e4e4e4;
+   color: #323232 !important;
+   background-color: #e4e4e4 !important;
+   border-color: #e4e4e4 !important;
 }
 
 .btn-secondary {
-   color: #323232;
-   background-color: #d9d9d9;
-   border-color: #d9d9d9;
+   color: #323232 !important;
+   background-color: #e4e4e4 !important;
+   border-color: #e4e4e4 !important;
 }
 
 .btn-secondary:hover,
 .btn-secondary.active {
-   color: #white;
-   background-color: #999;
-   border-color: #999;
+   color: white !important;
+   background-color: #656565 !important;
+   border-color: #656565 !important;
+}
+
+.btn-outline-secondary {
+   color: #323232 !important;
+   background-color: transparent !important;
+   border-color: #323232 !important;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary.active {
+   color: white !important;
+   background-color: #656565 !important;
+   border-color: #656565 !important;
 }
 
 .btn-dark {
-   color: white;
-   background-color: #656565;
-   border-color: #656565;
+   color: white !important;
+   background-color: #656565 !important;
+   border-color: #656565 !important;
 }
 
 .btn-dark:hover,
 .btn-dark.active {
-   color: white;
-   background-color: #323232;
-   border-color: #323232;
-} */
+   color: white !important;
+   background-color: #323232 !important;
+   border-color: #323232 !important;
+}
 
 /* grid */
 .row.g-0 {

@@ -76,12 +76,12 @@ document.write(`
    <div class="col-12">
       <hr class="border-secondary">
       <div class="table-responsive text-nowrap text-center text-md-left mb-4">
-         <button class="btn btn-sm btn-secondary active">All Reviews</button>
-         <button class="btn btn-sm btn-secondary"><i class="bi bi-star-fill"></i> 5</button>
-         <button class="btn btn-sm btn-secondary"><i class="bi bi-star-fill"></i> 4</button>
-         <button class="btn btn-sm btn-secondary"><i class="bi bi-star-fill"></i> 3</button>
-         <button class="btn btn-sm btn-secondary"><i class="bi bi-star-fill"></i> 2</button>
-         <button class="btn btn-sm btn-secondary"><i class="bi bi-star-fill"></i> 1</button>
+         <button class="btn btn-sm btn-outline-secondary active">All Reviews</button>
+         <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-star-fill"></i> 5</button>
+         <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-star-fill"></i> 4</button>
+         <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-star-fill"></i> 3</button>
+         <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-star-fill"></i> 2</button>
+         <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-star-fill"></i> 1</button>
       </div>
       <div>
          <ul class="list-unstyled mb-0" id="commentList">
