@@ -6,7 +6,7 @@ document.write(`
          <img src="assets/img/product/produk2.png" class="img-fluid w-100" alt="">
          <span class="position-wobler"><span class="wobler">20%</span></span>
       </a>
-      <button class="btn btn-addtocart" data-toggle="modal" data-target="#modalAddToCart"><i class="bi bi-cart-plus"></i></button>
+      <button class="btn btn-addtocart"><i class="bi bi-cart-plus"></i></button>
    </div>
    <div class="card-body">
       <p class="card-title">sumatra mandheling coffee capsules</p>
