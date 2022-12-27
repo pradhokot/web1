@@ -33,7 +33,7 @@ document.write(`
                      </button>
                   </div>
                   <input class="form-control text-center p-0 h-auto border-left-0 border-top-0 border-right-0 bg-transparent" value="1"
-                     min="1" max="100" readonly style="font-size: 1.25rem; max-width: 50px;">
+                     min="1" max="100" readonly type="number" style="font-size: 1.25rem; max-width: 50px;">
                   <div class="input-group-append">
                      <button class="btn p-0" style="font-size: 1.25rem;">
                         <i class="bi bi-plus-circle"></i>
