@@ -1,6 +1,6 @@
 // navbar shrink
 $(window).scroll(function () {
-   if ($(window).scrollTop() >= 150) {
+   if ($(window).scrollTop() >= 1) {
       $('#navtop').addClass('shrink');
    } else {
       $('#navtop').removeClass('shrink');

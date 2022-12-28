@@ -1,5 +1,5 @@
 document.write(`
-<div id="homeBanner" class="carousel slide carousel-fade bg-dark overflow-hidden" data-ride="carousel" data-interval="4000" data-pause="false">
+<div id="homeBanner" class="carousel slide carousel-fade bg-dark overflow-hidden border-bottom" data-ride="carousel" data-interval="4000" data-pause="false">
    <div class="carousel-inner">
       <div class="carousel-item active">
          <div class="carousel-caption text-dark">

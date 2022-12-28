@@ -80,11 +80,10 @@ document.write(`
    justify-content: center;
    line-height: 1;
    font-size: 1.25rem;
-   outline: solid 1px white;
 }
 
 .card-product .btn-addtocart:hover {
-   background-color: #323232;
+   background-color: #656565;
 }
 
 .card-product .card-body {

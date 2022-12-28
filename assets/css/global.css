@@ -58,6 +58,10 @@ body {
    opacity: .5 !important;
 }
 
+.bg-light {
+   background-color: #f1f2f2;
+}
+
 /* custom button */
 button:focus,
 input:focus,
@@ -117,7 +121,7 @@ textarea:focus,
 .btn-outline-secondary {
    color: #323232 !important;
    background-color: transparent !important;
-   border-color: #323232 !important;
+   border-color: #878787 !important;
 }
 
 .btn-outline-secondary:hover,
@@ -264,11 +268,11 @@ textarea:focus,
    width: 13px;
    height: 13px;
    border-radius: 100%;
-   background-color: #a9a9a9;
+   background-color: #d1d2d2;
 }
 
 .form-check input:checked~.form-check-circle {
-   background-color: #323232;
+   background-color: #656565;
 }
 
 @media (min-width: 1200px) {

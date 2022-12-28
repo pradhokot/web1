@@ -86,15 +86,18 @@ document.write(`
       <div>
          <ul class="list-unstyled mb-0" id="commentList">
             <li class="media">
-               <img src="assets/img/user/user.jpg" class="img-thumbnail rounded-circle mr-3" width="60" alt="...">
+               <img src="assets/img/user/user.jpg" class="img-thumbnail rounded-circle mr-3 p-0" alt="...">
                <div class="media-body">
                   <h5 class="fw-medium">Yoggi Dhimas P.</h5>
+                  <p class="mb-2">
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star"></i>
+                     <i class="bi bi-star"></i>
+                  </p>
                   <p>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star"></i>
-                     <i class="bi bi-star"></i>
+                     2022-02-22 &nbsp;&nbsp;&nbsp; 18:02:26
                   </p>
                   <p>
                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam modi illo quos voluptas
@@ -104,15 +107,18 @@ document.write(`
                </div>
             </li>
             <li class="media">
-               <img src="assets/img/user/user.jpg" class="img-thumbnail rounded-circle mr-3" width="60" alt="...">
+               <img src="assets/img/user/user.jpg" class="img-thumbnail rounded-circle mr-3 p-0" alt="...">
                <div class="media-body">
                   <h5 class="fw-medium">Yoggi Dhimas P.</h5>
+                  <p class="mb-2">
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star"></i>
+                     <i class="bi bi-star"></i>
+                  </p>
                   <p>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star"></i>
-                     <i class="bi bi-star"></i>
+                     2022-02-22 &nbsp;&nbsp;&nbsp; 18:02:26
                   </p>
                   <p>
                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam modi illo quos voluptas
@@ -122,15 +128,18 @@ document.write(`
                </div>
             </li>
             <li class="media">
-               <img src="assets/img/user/user.jpg" class="img-thumbnail rounded-circle mr-3" width="60" alt="...">
+               <img src="assets/img/user/user.jpg" class="img-thumbnail rounded-circle mr-3 p-0" alt="...">
                <div class="media-body">
                   <h5 class="fw-medium">Yoggi Dhimas P.</h5>
+                  <p class="mb-2">
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star-fill"></i>
+                     <i class="bi bi-star"></i>
+                     <i class="bi bi-star"></i>
+                  </p>
                   <p>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star-fill"></i>
-                     <i class="bi bi-star"></i>
-                     <i class="bi bi-star"></i>
+                     2022-02-22 &nbsp;&nbsp;&nbsp; 18:02:26
                   </p>
                   <p>
                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates totam modi illo quos voluptas
@@ -148,6 +157,16 @@ document.write(`
 
             #commentList li:last-of-type {
                border-bottom: 1px solid transparent;
+            }
+
+            #commentList li > img {
+               width: 40px;
+            }
+
+            @media (min-width: 992px) {
+               #commentList li > img {
+                  width: 50px;
+               }
             }
          </style>
       </div>
