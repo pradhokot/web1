@@ -118,11 +118,12 @@
                            <!-- gift announcement -->
                            <div class="row g-3">
                               <div class="col-4">
-                                 <img src="assets/img/product/produk2.png" class="img-fluid" alt="">
+                                 <img src="assets/img/product/produk4.jpg" class="img-fluid rounded" alt="">
                               </div>
                               <div class="col-8">
                                  <p>
-                                    Just add " $25 " more to receive a FREE Exotic Blend Coffee Beans this season
+                                    Just add <span data-toggle="modal" data-target="#pilihGift">" $25 "</span> more to
+                                    receive a FREE Exotic Blend Coffee Beans this season
                                     of gifting!
                                  </p>
                                  <a href="coffee.html"><u>Continue Shopping</u> <i class="bi bi-chevron-right"></i></a>
@@ -140,9 +141,11 @@
                               </div>
                            </div>
 
+                           <!-- coupon code -->
                            <form action="">
                               <div class="input-group mb-2">
-                                 <input type="text" class="form-control">
+                                 <input type="text" class="form-control bg-white" placeholder="Coupon Code"
+                                    data-toggle="modal" data-target="#pilihCoupon" readonly>
                                  <div class="input-group-append">
                                     <button class="btn btn-outline-secondary">
                                        <i class="bi bi-arrow-counterclockwise"></i>
@@ -150,7 +153,6 @@
                                  </div>
                               </div>
                            </form>
-
                            <div class="alert alert-danger alert-dismissible">
                               <i class="bi bi-exclamation-triangle-fill mr-2"></i>
                               Required Member Registration To Use This Promo Code.
@@ -211,6 +213,9 @@
 
    </main>
 
+   <script src="hapusCart.js"></script>
+   <script src="pilihGift.js"></script>
+   <script src="pilihCoupon.js"></script>
    <script src="copyright.js"></script>
    <script src="footer.js"></script>
    <script>

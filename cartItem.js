@@ -3,7 +3,7 @@ document.write(`
    <div class="row">
       <div class="col col-12 col-xl-auto">
          <div class="position-relative">
-            <button class="close"><span aria-hidden="true">&times;</span></button>
+            <button class="close" data-toggle="modal" data-target="#hapusCart"><span aria-hidden="true">&times;</span></button>
          </div>
       </div>
       <div class="col col-5 col-sm-3 col-md-2 col-lg-3 col-xl-2">
