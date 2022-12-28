@@ -88,6 +88,7 @@ document.write(`
       border: solid 1px #ced4da;
       border-radius: .25rem;
       background-color: white!important;
+      opacity: .75!important;
    }
 
    .cart-item .close:hover {
@@ -99,7 +100,7 @@ document.write(`
          position: absolute;
          top: 0;
          left: 0;
-         transform: translateY(-50%);
+         transform: translateY(-25%) translateX(-25%);
          z-index: 100;
       }
    }

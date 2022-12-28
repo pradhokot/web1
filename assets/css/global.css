@@ -33,7 +33,9 @@ body {
    font-family: 'Google', sans-serif;
 }
 
-/* * {outline: solid 1px green;} */
+* {
+   /* outline: solid 1px green; */
+}
 
 .wrapper {
    padding-top: 70px;
@@ -63,6 +65,10 @@ body {
 }
 
 /* custom button */
+a {
+   color: inherit;
+}
+
 button:focus,
 input:focus,
 select:focus,
