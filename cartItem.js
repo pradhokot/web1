@@ -85,10 +85,7 @@ document.write(`
    .cart-item .close {
       width: 28px;
       height: 28px;
-      border: solid 1px #ced4da;
       border-radius: .25rem;
-      background-color: white!important;
-      opacity: .75!important;
    }
 
    .cart-item .close:hover {

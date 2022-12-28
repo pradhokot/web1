@@ -33,9 +33,7 @@ body {
    font-family: 'Google', sans-serif;
 }
 
-* {
-   /* outline: solid 1px green; */
-}
+/* * {outline: solid 1px green;} */
 
 .wrapper {
    padding-top: 70px;
@@ -62,6 +60,12 @@ body {
 
 .bg-light {
    background-color: #f1f2f2;
+}
+
+@media (min-width: 992px) {
+   .d-lg-nowrap {
+      flex-wrap: nowrap;
+   }
 }
 
 /* custom button */
